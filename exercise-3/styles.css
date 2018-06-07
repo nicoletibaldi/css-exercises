@@ -21,11 +21,6 @@ input {
   top: 25rem;
 }
 
-labellll {
-  display: none;
-  position: fixed;
-}
-
 label {
   padding-top: 5rem;
   position: absolute;
