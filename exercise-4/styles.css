@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Domaine Display";
   font-weight: 700;
+  font-display: fallback;
   font-style: italic;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineDisplayTest-ExtraboldItalic.woff)
     format("woff");
@@ -8,6 +9,7 @@
 
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 300;
   font-style: normal;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-Light.woff)
@@ -16,6 +18,7 @@
 
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 300;
   font-style: italic;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-LightItalic.woff)
@@ -24,6 +27,7 @@
 
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 500;
   font-style: normal;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-Medium.woff)
@@ -32,6 +36,7 @@
 
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 500;
   font-style: italic;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-MediumItalic.woff)
@@ -40,6 +45,7 @@
 
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 700;
   font-style: normal;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-Bold.woff)
@@ -48,6 +54,7 @@
 
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 700;
   font-style: italic;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-BoldItalic.woff)
@@ -56,6 +63,7 @@
 
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 800;
   font-style: normal;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-Black.woff)
@@ -64,6 +72,7 @@
 
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 800;
   font-style: italic;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-BlackItalic.woff)
@@ -73,6 +82,7 @@
 /* Load body last 😈 */
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 400;
   font-style: normal;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-Regular.woff)
@@ -81,6 +91,7 @@
 
 @font-face {
   font-family: "Domaine Text";
+  font-display: fallback;
   font-weight: 400;
   font-style: italic;
   src: url(https://dv9y9s4n4ocup.cloudfront.net/DomaineTextTest-RegularItalic.woff)
@@ -99,12 +110,15 @@ figure {
   margin-right: -10em;
   margin-top: 0;
   overflow: hidden;
+  padding-bottom: 66.67%;
+  position: relative;
 }
 
 figure img {
   max-width: 100%;
   object-fit: cover;
   object-position: center center;
+  position: absolute;
 }
 
 article {
@@ -117,7 +131,7 @@ article {
 
 article h1 {
   background-color: white;
-  font-family: "Domaine Display";
+  font-family: "Domaine Display", Georgia, serif;
   font-size: 3.5rem;
   font-style: italic;
   font-weight: 700;
